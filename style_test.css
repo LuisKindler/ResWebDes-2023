@@ -1,0 +1,690 @@
+/* Body*/
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+div {
+  display: block;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Verhindert das horizontale Scrollen */
+}
+
+
+/* Header-Stile */
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1px;
+
+}  
+
+.logo img {
+  width: 200px;
+  height: auto;
+  margin: 5px;
+  padding-top: 10px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .logo {
+      text-align: center;
+    }
+    
+    .logo img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+/* Navigationsmenü-Stile */  
+
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+  justify-content: flex-end;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #BAAB8F;
+  font-size: 17px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+/*Burger-Menue*/
+/*Reponsive Navbar*/
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+/* Erstes Bild */
+  
+.image-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url("Pictures/BAckround_Schatten_Ellipsoid_Schwarz_V06.2.png");
+  background-size: cover; /* Das Hintergrundbild wird den Abschnitt abdecken */
+  background-position:  center; /* Das Hintergrundbild wird zentriert positioniert */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  @media screen and (max-width: 1025px) {
+    .image-section {
+      background-size: contain; /* Das Hintergrundbild wird verkleinert, um vollständig sichtbar zu sein */
+    
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .image-section {
+
+      background-size: contain; /* Das Hintergrundbild wird verkleinert, um vollständig sichtbar zu sein */
+      background-attachment: fixed; /* Das Hintergrundbild scrollt mit dem Inhalt */
+    }
+  }
+  
+  
+
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------------- Allgemeine Stile -------------------------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*------Roter Ellipsoid wird hell----------------------------*/
+.highlight-hover:hover {
+  filter: brightness(250%);
+  filter:contrast(-50%)
+}
+  /*----------------------------------*/
+ 
+  .content {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+ 
+
+  .inhalt-content-right-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: last baseline;
+    margin-right: 250px;
+  }
+
+
+
+/* Text und Hintergrund für Abschnitt Zuhause */
+
+#zuhause {
+  padding-top: 5rem;
+  padding-bottom: 3.125rem;
+  background-image: url("Pictures/Wohnzimmer_V03.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+/* Text und Hintergrund für Abschnitt Einzigartig */
+
+#einzigartig {
+  padding-top: 5rem;
+  padding-bottom: 3.125rem;
+  background-image: url("Pictures/Schreibtisch_V03\ \(3\).jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+/* Text und Hintergrund für Abschnitt Ueberall */
+
+#überall {
+  padding-top: 5rem;
+  padding-bottom: 3.125rem;
+  background-image: url("Pictures/Neue/Küche_V04.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+@media (max-width: 600px) {
+  #zuhause {
+    background-image: url("Pictures/Neue/Wohnzimmer_Hochformat.png");
+   
+  }
+  #einzigartig {
+    background-image: url("Pictures/Neue/Schreibtisch_Hochformat.png");
+  }
+  #überall {
+    background-image: url("Pictures/Neue/Küche_Hochformat.png");
+  }
+  .image-section {
+    background-image: url("Pictures/Neue/Backround_Hochformat.png");
+  }
+
+  .highlight-hover {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 900px) {
+  .image-section {
+    background-image: url("Pictures/Neue/Backround_Hochformat.png");
+    background-size: cover;
+  }
+
+  #zuhause {
+    background-image: url("Pictures/Neue/Wohnzimmer_IPad.png");
+   
+  }
+  #einzigartig {
+    background-image: url("Pictures/Neue/Schreibtisch_IPad.png");
+  }
+  #überall {
+    background-image: url("Pictures/Neue/Küche_IPad.png");
+  }
+
+  #footer-last{
+    font-size: 10px;
+    height: 50px;
+    margin-right: 20px;
+  }
+ 
+}
+
+
+
+  
+
+
+  
+  .überschrift-links-1 {
+    text-align: left;
+  }
+
+  .überschrift-links-2 {
+    position: center;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .überschrift-rechts-1 {
+    position: center;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    text-align: left;
+    
+  }
+  
+  
+  .text-rechts {
+    margin-bottom: 150px;
+    margin-right: -10px;
+    text-align: left;
+  }
+  
+  
+  body {
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  h1,h2,h3,h4,
+  p {
+    color: #ffffff;
+  }
+
+  p {
+    font-family: "Japer Daniels";
+    font-size: 20px;
+    line-height: 23px;
+    word-wrap: break-word;
+
+}
+
+  h2 {
+    font-size: 48px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 2px 20px #baab8f;
+  }
+
+  h4 {
+    font-size: 48px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 2px 20px #baab8f;
+
+  }
+  .line {
+    width: 100%;
+    height: 5px;
+    margin: rem;
+    background-color: #BAAB8F;
+  }
+  /*****************Responsive*******************************/
+ 
+
+
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------------------Hauptinhalt-Stile -------------------------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  
+  main {
+    padding: 0px;
+  }
+  
+  
+
+
+  /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  -------------------------------------------------------------------------------------------------- Slider-Stile -------------------------------------------------------------------------
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .product:nth-child(1) {
+    order: var(--order-1);
+  }
+  
+  .product:nth-child(2) {
+    order: var(--order-2);
+  }
+  
+  .product:nth-child(3) {
+    order: var(--order-3);
+  }
+  
+  .product:nth-child(4) {
+    order: var(--order-4);
+  }
+  
+  .product:nth-child(5) {
+    order: var(--order-5);
+  }
+  
+  .product:nth-child(6) {
+    order: var(--order-6);
+  }
+  
+  .product:nth-child(7) {
+    order: var(--order-7);
+  }
+  
+  .slider-container {
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .product {
+    flex: 0 0 25%;
+    height: 300px;
+    margin-right: 10px;
+    order: var(--order);
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .product:hover img {
+    transform: scale(1.2);
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #fff; /* Farbe der Pfeile */
+    font-size: 23px; /* Größe der Pfeile */
+    text-align: center;
+    line-height: 36px; /* Mittige Position des Pfeils in der Rundung */
+    border-radius: 50%; /* Rundung der Pfeile */
+    border: 2px solid #fff; /* Randstil der Pfeile */
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .arrow-left {
+    left: 10px; /* Abstand vom linken Rand */
+  }
+  
+  .arrow-right {
+    right: 10px; /* Abstand vom rechten Rand */
+  }
+  
+  /* Produktinformationen beim Hovern */
+  .product {
+    position: relative;
+  }
+  
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    position: absolute;
+    bottom: 10;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .product:hover .product-info {
+    opacity: 1;
+  }
+  
+  .product-info h4 {
+    margin: 5px;
+  }
+
+  .product-info h3,
+  .product-info p {
+    margin: 0;
+  }
+  
+  .more-button {
+    background-color: #BAAB8F;
+    color: #ffffff;
+    padding: 15px 32px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    margin-top: 10px;
+  }
+  
+
+  .more-button:hover {
+    transform: scale(1.1);
+    background-color: #D5C9B5;
+  }
+  
+
+  .price {
+    font-weight: 300; /* Setze die Schrift auf eine dünnere Gewichtung */
+    font-size: 0.8em; /* Passe die Schriftgröße an, falls gewünscht */
+    /* Weitere gewünschte Stile */
+  }
+  
+  /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  -------------------------------------------------------------Responsive Styling---------------------------------------------------------------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+  
+  
+  
+
+  /*-----------------------------------------Kontakt*/
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto; 
+    padding: 50px;
+  }
+  
+  .contact-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+    color: #ffffff;
+  }
+  
+  .contact-form textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #baab8f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .contact-form button:hover {
+    background-color: #d5c9b5;
+  }
+  
+  /*-------------------------------------------------
+    flex-direction: column;
+    justify-content: center;
+    align-items: last baseline;
+    -------------------------------------------------------------------------------------------------------------------------*/
+    
+    /* Footer-Stile */
+
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      width: 100%;
+    }
+    
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+/*---------------------------*/
+    
+    .footer-nav-links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .footer-nav-links li {
+      margin-right: 20px;
+    }
+    
+    .footer-nav-links a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+
+/*---------------------------*/
+.logo-bottom img {
+  width: 200px;
+  height: auto;
+  margin: 5px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+/*---------------------------*/
+
+    .social-icons {
+      display: flex;
+      align-items: center;
+    }
+    
+    .social-icons a {
+      display: inline-block;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      margin-right: 10px;
+      width: 24px;
+      height: 24px;
+    }
+    
+    .social-icons img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    
+    
+/*---------------------------*/
+
+
+    .country-select-container {
+      margin-top: 0px;
+    }
+    
+    .country-select {
+      padding: 5px;
+      font-size: 14px;
+    }
+    
+    .country-select option {
+      font-size: 14px;
+    }
+    
+    .country-select-container .select-wrapper {
+      position: relative;
+    }
+    
+    .country-select-container .select-wrapper::after {
+      content: '\f0d7';
+      font-family: FontAwesome;
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      color: #fff;
+      pointer-events: none;
+    }
+    
+    .select-wrapper select::-ms-expand {
+      display: none;
+    }
+    
+    .select-wrapper select::-webkit-scrollbar {
+      width: 8px;
+    }
+    
+    .select-wrapper select::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 4px;
+    }
+    
+    .select-wrapper select::-webkit-scrollbar-track {
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+    
+    .select-wrapper select:focus {
+      outline: none;
+    }
+    
+/*---------------------------*/
+
+.Last p {
+  text-align: center;
+  font-size: 18px;
+  color: #BAAB8F;
+  white-space: nowrap;
+}
+
+
+/*--------------Responsive-------------*/
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  padding-right: 1rem;
+
+}
+
+.card > * {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 280px;
+}
+
+.media {
+  min-height: 200px;
+}
+
+
